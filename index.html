@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+<body>
+    <!--Main - Starts-->
+    <main class="container col-12 col-md-4 col-xl-2 position-absolute top-50 start-50 translate-middle rounded-3">
+        <!--Screen - Starts-->
+        <div id="screen" class="container border border-3 rounded-3 position-relative mt-3 btn-light">
+            <div id="screenText" class="position-absolute bottom-0 end-0 fs-1">
+            </div> 
+        </div>
+        <!--Screen - Ends-->
+
+        <!--Clear/Delete Buttons - Starts-->
+        <div class="row mt-3 mb-3 ">
+            <div class="btn-group gap-1 gap-md-2 gap-xl-4" role="group" aria-label="Basic example">
+                <button type="button" class="btn btn-warning border border-1 border-light" onclick="clearScreen(), clearNumberArray()">Clear</button>
+                <button type="button" class="btn btn-danger border border-1 border-light" onclick="deleteScreen()">Delete</button>
+            </div>
+        </div>
+        <!--Clear/Delete Buttons - Starts-->
+
+        <!--Numbers & Arithmetic Operators-->
+        <!--First Row: 7, 8, 9, ÷ -->
+        <div class="row mt-3">
+            <div class="btn-group gap-1 gap-md-2 gap-xl-4" role="group" aria-label="Basic example">
+                <button id="seven" type="button" class="btn btn-light rounded-3 border border-2">7</button>
+                <button id="eight" type="button" class="btn btn-light rounded-3 border border-2">8</button>
+                <button id="nine" type="button" class="btn btn-light rounded-3 border border-2">9</button>
+                <button id="division" type="button" class="btn btn-light rounded-3 border border-2">÷</button>
+            </div>
+        </div>
+        <!--Second Row: 4, 5, 6, × -->
+        <div class="row mt-3">
+            <div class="btn-group gap-1 gap-md-2 gap-xl-4" role="group" aria-label="Basic example">
+                <button id="four" type="button" class="btn btn-light rounded-3 border border-2">4</button>
+                <button id="five" type="button" class="btn btn-light rounded-3 border border-2">5</button>
+                <button id="six" type="button" class="btn btn-light rounded-3 border border-2">6</button>
+                <button id="multiplication" type="button" class="btn btn-light rounded-3 border border-2">×</button>
+              </div>
+        </div>  
+        <!--Third Row: 1, 2, 3, - -->
+        <div class="row mt-3">
+            <div class="btn-group gap-1 gap-md-2 gap-xl-4" role="group" aria-label="Basic example">
+                <button id="one" type="button" class="btn btn-light rounded-3 border border-2">1</button>
+                <button id="two" type="button" class="btn btn-light rounded-3 border border-2">2</button>
+                <button id="three" type="button" class="btn btn-light rounded-3 border border-2">3</button>
+                <button id="subtraction" type="button" class="btn btn-light rounded-3 border border-2">-</button>
+            </div>
+        </div>
+        <!--Fourth Row: ., 0, =, + -->
+        <div class="row mt-3 mb-3">
+            <div class="btn-group gap-1 gap-md-2 gap-xl-4" role="group" aria-label="Basic example">
+                <button id="point" type="button" class="btn btn-light rounded-3 border border-2">.</button>
+                <button id="zero" type="button" class="btn btn-light rounded-3 border border-2">0</button>
+                <button id="equalSign" type="button" class="btn btn-light rounded-3 border border-2">=</button>
+                <button id="addition" type="button" class="btn btn-light rounded-3 border border-2">+</button>
+            </div>
+        </div>
+    </main>
+    <!--Main - Ends-->
+
+    <!--Footer - Starts-->
+    <footer class="footer text-center">
+     <p>
+      Copyright ©
+      <script>
+        document.write(new Date().getFullYear())
+      </script>
+      InciGulcinDY
+        </p>
+        <a href="https://github.com/InciGulcinDY" target="_blank">
+      <i class="fab fa-github"></i
+        ></a>
+    </footer>
+    <!--Footer - Ends-->    
+    <script src="calculator.js"></script>
+</body>
+</html>

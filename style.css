@@ -1,0 +1,31 @@
+body{
+    background-color: #E8E8E8;
+}
+
+main{
+    background-color: #BBBFCA;
+}
+
+button{
+    width: 100%;
+    font-size: larger;
+}
+
+#screen{
+    width: 90%;
+    height: 100px;
+}
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    width: 100%;
+    padding: 10px;
+    font-size: 20px;
+    color: #222831;
+}
